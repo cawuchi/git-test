@@ -70,6 +70,16 @@ variable "cross_account_arn" {
   default = "arn:aws:iam::232920852660:role/CrossAccountforDB"
 }
 
+variable "access_key" {
+ description = "The AWS access key"
+ type = sensitive
+}
+
+variable "secret_key" {
+description = "The AWS secret_key"
+type = sensitive
+}
+
 locals {
   prefix = "private-link-ws"
 }
