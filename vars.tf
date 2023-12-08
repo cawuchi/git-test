@@ -72,12 +72,12 @@ variable "cross_account_arn" {
 
 variable "access_key" {
  description = "The AWS access key"
- type = sensitive
+ sensitive = true
 }
 
 variable "secret_key" {
 description = "The AWS secret_key"
-type = sensitive
+sensitive = true
 }
 
 locals {
